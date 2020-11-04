@@ -5,14 +5,12 @@ let user = {
 
 //let name = user.name 
 // let age = user.age 
-const { name , age } = user 
+// const { name , age } = user 
 
-const sayHello= (userObj )=>{
-  const { name , age }= user
- return `
-   Hello my name is ${name} my age
-   is ${age}
-  `
+const sayHello= ({ name , age } )=>{
+
+  // const { name , age }= userObj
+ return `Hello my name is ${name} my age is ${age}`
 }
 console.log(sayHello(user))
 
@@ -23,8 +21,7 @@ console.log(sayHello(user))
 
 let arr = ["one" ,"two" ,"three"]
 
-
 // let first = arr[0]
 const [first , second , third] = arr
 
-console.log(second)
+console.log(first)
